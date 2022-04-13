@@ -1,0 +1,17 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+  font-size: 20px;
+}
+/*####### Pseudoclases#######*/
+ul li:first-child /*primer hijo, selecciona , en este caso a la primera li*/ {
+  color: blueviolet;
+  font-weight: bold;
+}
+ul li:nth-child(2)/*podemos elegir cual seleccionar, en este caso indico el segundo*/ {
+  color: yellow;
+}
+ul li:last-child/*el ultimo elemento*/ {
+  color: gray;
+}

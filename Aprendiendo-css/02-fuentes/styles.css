@@ -1,0 +1,40 @@
+/*Para importar una fuente podemos descargar la fuente desde google fonts y la guardamos en la misma carpeta de trabajo, para asociarlo:*/
+@font-face {
+  font-family: Roboto2Custom;
+  src: url(Roboto/Roboto-Regular.ttf);
+}
+h1 {
+  font-family/*Tipo de letra*/: Arial, Helvetica, sans-serif;
+  font-size:/*tamaño fuente*/ 30px;
+  font-weight/*Grosor de la letra*/: bold;
+  font-style:/*estilo de letra (cursiva)*/ italic;
+}
+
+h2 {
+  font-family: Roboto2Custom, "Comic Sans MS";
+  font-weight: 200;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+  /*Colores*/
+
+  /*Colores del sistema (puedo ver paleta en google css colors default) */
+
+  color: DarkOliveGreen;
+
+  /*Colores hexadecimales*/
+
+  color: #ff00ff;
+
+  /*Colores RGB (puedo ver paleta en google rgb css generator)*/
+
+  color: rgb(141, 195, 226);
+
+  /*Colores RGBA contiene opacidad*/
+
+  color: rgba(141, 195, 226, 0.6);
+}

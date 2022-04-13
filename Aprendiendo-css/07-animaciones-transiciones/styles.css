@@ -1,0 +1,56 @@
+#boton {
+  display: block;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 5px solid rgb(5, 102, 5);
+  transition: border 500ms, background 3s, border-radius 1s; /* all se aplica a todo, sino puedo hacer que cada propiedad indicando la propiedad y la duracion de la transicion*/
+}
+
+#boton:hover {
+  border-radius: 15px;
+  background-color: orangered;
+  border: 5px solid red;
+}
+#caja {
+  margin-top: 25px;
+  width: 250px;
+  height: 250px;
+  background-color: lightgreen;
+  color: white;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+  animation-name: desplazamiento; /* aplico la animacion*/
+  animation-duration: 10s; /*duracion de la animacion*/
+  animation-iteration-count: infinite; /*si la quiero hacer infinita o no*/
+  animation-timing-function: linear; /*le puedo poner que sea lineal o que sea rapido al principio, lento, etc*/
+}
+/*keyframes conjuntos de fotogramas, debemos colocar un nombre como en este caso "desplazamiento", dentro colocamos la anumacion a realizar*/
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-left: 1200px;
+    transform: rotate(360deg);
+    border-radius: 999px;
+  }
+  75% {
+    background-color: red;
+  }
+  77% {
+    border: 10px dashed blue;
+  }
+  100% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+}

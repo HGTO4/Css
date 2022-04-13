@@ -1,0 +1,134 @@
+/*
+Ejercicio completo con HTML y CSS
+1. Crear un documento HTML y vincularlo con un CSS
+2. Crear una estructura HTML que cuente con un CONTENEDOR GENERAL , CABECERA, MENU, BARRA LATERAL, SECCION DE CONTENIDO PRINCIPAL Y FOOTER.
+3. Todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px y estar centrado.
+4 Header debe ocupar el 100% del ancho y tener un texto grande centrado.
+5. Menu debe tener los elementos de uno al lado del otro.
+6. El contenido principal debe tener un ancho del 70%
+7. El contenido dentro del contenedor principal debe ser una cuadrilla con 4 lineas de 2 cajas.
+8. La barra lateral debe tener un ancho del 30%
+9. El footer debe tener un ancho del 100% del div que lo contiene y estar abajo del todo.
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+#general {
+  width: 1200px;
+  border: 1px solid black;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(18, 18, 175, 0.589);
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  line-height: 100px;
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+#menu ul li {
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+#menu {
+  background-color: #eeeeee;
+}
+#menu ul li a {
+  display: block;
+  padding: 15px;
+  color: #444;
+}
+#menu ul li:hover a {
+  color: white;
+}
+#menu ul li:hover {
+  background-color: rgba(18, 18, 175, 0.719);
+  cursor: pointer;
+}
+
+#contenido {
+  width: 69%;
+  float: left;
+}
+
+#lateral {
+  width: 30%;
+  border: 1px solid red;
+  float: left;
+  min-height: 500px;
+  max-height: 650px;
+  overflow-y: scroll;
+}
+
+#contenido .caja {
+  width: 40%;
+  height: 250px;
+  background-color: #ccc;
+  border: 1px solid gray;
+  color: #444;
+  float: left;
+  margin: 20px;
+  margin-left: 40px;
+  text-align: center;
+  line-height: 200px;
+  box-shadow/*sombra externa*/: 0px 0px 15px gray;
+}
+.sombra-interior {
+  box-shadow/*sombra interna*/: 0px 0px 15px gray inset !important;
+  border-radius/*bordes de la caja*/: 1px 50px 10px 100px;
+}
+#contenido > h1 {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+  text-shadow/*sombra*/: 1px /*eje x*/ 1px /*eje y*/ 2px /*difuminado*/ grey;
+}
+footer {
+  width: 100%;
+  height: 55px;
+  border-top: 1px solid black;
+  color: #444;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 55px;
+}
+.libre {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  border: 1px solid black;
+  background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  font-size: 13px;
+  z-index: 2;
+}
+
+.libre2 {
+  background-color: gray;
+  top: 280px;
+  left: 50%;
+  z-index/*ver que capa esta por encima*/: 1;
+}
+.fija {
+  border: 1px solid black;
+  font-size: 13px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: violet;
+  top: 50%;
+  left: 0px;
+  color: white;
+}

@@ -1,0 +1,77 @@
+/* 
+######## SELECTORES #########
+*/
+
+/*Selector universal*/
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selector de etiqueta*/
+h1 {
+  background: red;
+  color: white;
+  padding: 10px;
+}
+li {
+  font-size: 18px;
+  color: blue;
+  text-decoration: none;
+}
+
+/* Selectores de id*/
+#descripcion {
+  border: 5px solid black;
+  padding: 10px;
+}
+
+/*Selector de clase*/
+.parrafo {
+  font-style: italic;
+  /*text-decoration: underline;*/
+  font-weight: bold;
+  padding: 10px;
+}
+.parrafo2 {
+  background-color: aquamarine;
+}
+
+.parrafo3 {
+  background-color: beige;
+}
+
+/*Selectores de atributos*/
+
+#usuario form {
+  border: 5px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#usuario form * {
+  display/*me permite que los elementos se comporte como un bloque o uno al lado del otro*/: block;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+  border-color: grey;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/*Selector de hijo*/
+#menu > li {
+  font-size: 18px;
+  color: green;
+  text-decoration: none;
+}
+
+/* Prioridad*/
+.title {
+  text-decoration: underline;
+}

@@ -1,0 +1,351 @@
+/*FUENTES*/
+@font-face {
+  font-family: "nevis";
+  src: url("fonts/nevis.eot");
+  src: url("fonts/nevis.eot?#ie") format("embedded-opentype"),
+    url("fonts/nevis.woff") format("woff") url("fonts/nevis.ttf")
+      format("truetype"),
+    url("fonts/nevis.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*ESTILOS GENERALES*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-image: url(../img/fond.gif);
+}
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+/*FORMULARIOS*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  border: 2px solid #c9c9c9;
+  box-shadow: 0px 0px 2px #ccc inset;
+  margin-left: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: grey;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border: 2px solid green !important;
+  color: black;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+select {
+  display: block;
+  border-radius: 2px;
+  width: 70px;
+  padding: 10px;
+  background-color: #019091;
+  border: 1px #066262;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 10px;
+  margin: 0px auto;
+}
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+select:hover {
+  box-shadow: 0px 0px 2px white;
+  text-shadow: 0px 0px 4px #066262;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+select:active {
+  box-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 4px black;
+}
+a {
+  text-decoration: none;
+  color: #019091;
+}
+a:hover {
+  color: #066262;
+}
+/*CABECERA*/
+
+#header {
+  min-width: 1024px;
+  width: 100%;
+  height: 165px;
+  margin: 0px auto;
+  background-color: #019091;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#header #logotipo {
+  width: 770px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#header #logotipo img {
+  display: block;
+  margin-left: 15%;
+  width: 100px;
+}
+
+#header h1 {
+  display: block;
+  float: inline-start;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-top: -60px;
+  font-family: "nevis";
+  text-shadow: 0px 1px 3px black;
+  transition: all 300ms;
+}
+
+#header h1:hover {
+  text-shadow: 0px 1px 3px black, 0px 0px 4px black;
+}
+
+#header h1 a {
+  color: white;
+}
+
+/* BARRA DE NAVEGACION*/
+
+#nav {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  height: 40px;
+  font-family: "nevis";
+  font-size: 14px;
+  box-shadow: 0px 0px 2px grey;
+}
+
+#nav ul {
+  list-style: none;
+  margin: 0% auto;
+  width: 1243px;
+}
+
+#nav > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 1px solid white;
+  transition: all 300ms;
+}
+
+#nav > ul > li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#nav > ul > li:first-child {
+  border-left: 1px solid white;
+}
+
+#nav > ul > li:hover {
+  background-color: #019091;
+  box-shadow: 0px 1px 2px #066262 inset;
+}
+
+/*MENU DESPLEGABLE*/
+
+#nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 0px 2px black;
+  z-index: 1;
+  background-color: #019091;
+  border-radius: 5px;
+  border: 1px ridge white;
+}
+#nav > ul > li > ul a {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+#nav > ul > li:nth-child(2) > ul {
+  width: 222px;
+}
+
+#nav > ul > li:nth-child(3) > ul {
+  width: 293px;
+}
+#nav > ul > li:nth-child(4) > ul {
+  width: 235px;
+}
+#nav > ul > li:nth-child(5) > ul {
+  width: 215px;
+}
+#nav > ul > li:hover > ul {
+  display: block;
+}
+#nav > ul > li:hover > ul > li {
+  border-bottom: 1px solid white;
+  line-height: 25px;
+  font-size: 14px;
+  transition: all 300ms;
+}
+#nav > ul > li:hover > ul > li:hover {
+  box-shadow: 0px 0px 2px black inset;
+  background-color: #066262;
+}
+#nav > ul > li:hover > ul > li:last-child {
+  border-bottom: none;
+}
+
+#nav > ul > li:hover > ul > li a {
+  color: white;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*BARRA LATERAL*/
+#aside {
+  width: 270px;
+  float: left;
+  margin: 30px;
+  background-color: #333;
+  color: white;
+  box-shadow: 1px 1px 6px grey inset;
+  font-family: "nevis";
+  border-radius: 2px;
+}
+
+#aside .widget {
+  display: block;
+  width: 250px;
+  margin: 5px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+#aside h3 {
+  display: block;
+  color: #019091;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: aliceblue;
+  width: 150px;
+  margin: 0px auto;
+  text-shadow: 0pc 0pc 0.8px black;
+  border-radius: 2px;
+}
+
+/* FORMULARIOS BARRA LATERAL*/
+
+#aside div label,
+#aside div input [type="text"],
+#aside div input [type="email"],
+#aside div input [type="password"],
+#aside div a {
+  display: block;
+  width: 95%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Secciones */
+
+#sections {
+  float: left;
+  width: 70%;
+  font-family: "nevis";
+  margin-right: 120px;
+  margin-top: 35px;
+}
+
+#sections article {
+  text-align: center;
+  clear: both;
+}
+
+#sections section {
+  margin-top: -6px;
+  margin-bottom: 40px;
+  border: 1px solid black;
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px black;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  box-shadow: 0px 0px 4px white inset;
+}
+
+#sections section article p a {
+  display: block;
+  float: left;
+  width: 15%;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: -25px;
+  font-size: 14px;
+}
+
+#sections section article p {
+  padding-top: 25px;
+}
+
+#sections section:last-child {
+  margin-bottom: 40px;
+}
+
+#sections h2 {
+  text-align: center;
+  color: white;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+  padding-top: 10px;
+}
+
+#redes #stickers img {
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  padding-right: 5px;
+}
+#redes {
+  text-align: center;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  border-top: 1px solid #019091;
+  background-color: #333;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  color: white;
+}
+footer p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}

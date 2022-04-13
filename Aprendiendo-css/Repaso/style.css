@@ -1,0 +1,53 @@
+body {
+  background-image: url(img/naturaleza.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#contenido {
+  border: 5px solid black;
+  color: black;
+  font-weight: 900;
+  background-color: rgba(141, 195, 171, 0.6);
+  text-shadow: 0px 0px 1px;
+}
+table {
+  border: 2px solid white;
+  background-color: rgb(141, 195, 226);
+}
+h1 {
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgba(0, 115, 255, 0.2);
+  padding: 10px;
+  margin-left: 700px;
+  margin-right: 700px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px black;
+  text-shadow: 0px 0px 2px black;
+  text-decoration: underline;
+}
+#menu {
+  margin-left: 730px;
+  background-color: #eeeeee;
+}
+#menu ul li {
+  display: block;
+  float: left;
+  padding: 5px;
+}
+#menu ul li:hover a {
+  background-color: rgba(0, 115, 255, 0.2);
+  cursor: pointer;
+}
+
+#menu ul li a {
+  display: block;
+  color: black;
+}
+
+#clearfix {
+  float: none;
+  clear: both;
+}
